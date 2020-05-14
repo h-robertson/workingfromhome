@@ -3,6 +3,7 @@ body {
     font-weight: 300;
     margin: 40px;
     font-size: 0.9em;
+    background-color: #f5f5f5;
 }
 
 h1 {
@@ -43,9 +44,10 @@ h3 {
     line-height: 1.5em;
     padding: 20px;
     margin-right: 70px;
-    border: 2px solid #ccc;
+    border: 2px solid #e5e5e5;
     border-radius: 10px;
-    box-shadow: 5px 7px #ccc;
+    box-shadow: 5px 7px #e5e5e5;
+    background-color: #fff;
 
 }
 
