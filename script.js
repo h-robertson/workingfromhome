@@ -30,7 +30,7 @@ var margin = {
         bottom: 50,
         left: 90
     },
-    width = 900 - margin.left - margin.right,
+    width = 700 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
 // append the svg 
@@ -344,7 +344,7 @@ d3.select("#barSelectChild")
     });
 
 // Set svg size
-var widthBar = 1400 - margin.left - margin.right;
+var widthBar = 1150 - margin.left - margin.right;
 var heightBar = 500 - margin.top - margin.bottom;
 
 // append svg & set margins 
@@ -506,7 +506,7 @@ d3.csv("barChartData.csv", function (data) {
         .data(activities)
         .enter()
         .append('rect')
-        .attr('x', 1080)
+        .attr('x', 830)
         .attr('y', function (d, i) {
             return 90 + i * 30;
         })
@@ -523,7 +523,7 @@ d3.csv("barChartData.csv", function (data) {
         .text(function (d) {
             return d;
         })
-        .attr('x', 1130)
+        .attr('x', 880)
         .attr('y', function (d, i) {
             return 93 + i * 30;
         })
