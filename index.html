@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>How remote & non-remote workers spend their time</title>
+    <script src="https://d3js.org/d3.v4.js"></script>
+</head>
+
+<body>
+    <!-- INTRODUCTION -->
+    <h1>A Day in the Life: Remote & Non-Remote Workers</h1>
+    <hr>
+    <p class="storyText">The coronavirus lockdown has forced those who can to work remotely. But how does the
+        day-to-day life of a remote worker
+        differ from someone who works in their workplace?</p>
+    <p class="storyText">The first chart below shows the distribution of time spent in a day doing various activities
+        for remote
+        and non-remote workers.</p>
+
+    <!-- VISUALISATION 1: DENSITY PLOTS -->
+    <div class="container">
+        <div id="densityChart">
+            <h2>How many minutes a day are spent... <select class="selectButton" id="densitySelect"
+                    name="densitySelect"></select>
+            </h2>
+            <h3>Number of minutes</h3>
+        </div>
+        <div id='explanation'>
+            A remote worker is defined here as someone who only works away from the workplace, and a non-remote worker
+            is someone who only works at their workplace.
+        </div>
+        <div id="analysisText">
+            <b>Most non-remote workers spend a routine 6 - 10 hours of their day working, while the schedules of
+                remote
+                workers are far more variable.</b>
+        </div>
+    </div>
+    <hr>
+
+    <!-- VISUALISATION 2: STACKED BAR-->
+    <p class="storyText">The growth of remote working has different implications depending on gender. In 2019, a study
+        from
+        University College London found that less than 7% of couples share housework equally, with women undertaking the
+        bulk of domestic duties. With remote working increasing, this imbalance could be improved, as flexible working
+        patterns and no commuting frees up time for household tasks. Remote working is
+        also providing mothers with opportunities to continue working, where previously having children may have
+        put a halt on their careers.</p>
+    <p class='storyText'>But, despite this optimistic outlook, the chart below highlights the differences we still see
+        between remote and
+        non-remote workers of different genders. Female remote workers aged 18-34 who have children spend an average of
+        three hours on children a day, almost an hour
+        and a half longer than their non-remote counterparts. This daily schedule also only takes account of activites
+        directly
+        reported as caring for children, and does not include other tasks throughout the day that
+        are undertaken while also looking after children. On average, young male remote and non-remote male workers
+        spend less than an hour caring for children.
+    </p>
+    <p class='storyText'>Use the dropdown boxes to explore how different people spend their day.
+    </p>
+    <h2>On average, how does a <select class="selectButton" id="barSelectSex" name="barSelectSex"></select> worker, aged
+        <select class="selectButton" id="barSelectAge" name="barSelectAge"></select> who <select class="selectButton"
+            id="barSelectChild" name="barSelectChild"></select> children, spend their day? </h2>
+    <h3>Number of minutes</h3>
+    <div id="barChart"></div>
+
+    <hr>
+
+    <!-- SOURCES -->
+    <div class="sourcing">
+        <ul>
+            <li>The data for these charts came from the <a href="https://www.bls.gov/tus/howto.htm">American Time Use
+                    Survey (ATUS) microdata in 2018</a>.</li>
+            <li>The data was subset to include those aged 18 or over who are employed and who recorded their
+                activities on a non-holiday weekday.</li>
+            <li>
+                The inspiration for using this data came from Nathan Yau's visualisations of the survey, from
+                his
+                own
+                investigation into <a
+                    href="https://flowingdata.com/2018/06/06/working-remotely-and-where-the-time-goes/">Remote Workers
+                    vs. Non-Remote Workers</a>, as well as the <a
+                    href="https://flowingdata.com/2015/11/30/most-common-use-of-time-by-age-and-sex/">Most Common Use of
+                    Time, by Age
+                    and
+                    Sex</a>, and <a href="https://flowingdata.com/2015/12/15/a-day-in-the-life-of-americans/">A Day in
+                    the Life of Americans</a>.
+            </li>
+        </ul>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
