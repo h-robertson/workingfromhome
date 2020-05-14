@@ -3,7 +3,7 @@
 An assignment for my Data Visualisation module on MSc Computational & Data Journalism.
 
 ### Data
-The data comes from the 2018 American Time Use Survey (ATUS) microdata files.
+The data comes from the [2018 American Time Use Survey (ATUS) microdata](https://www.bls.gov/tus/howto.htm) files.
 (See Python notebook for data analysis).
 
 ### Visualisations
